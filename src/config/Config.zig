@@ -1197,6 +1197,14 @@ keybind: Keybinds = .{},
 /// Default is false.
 @"focus-follows-mouse": bool = false,
 
+
+/// This controls when the user copies text to the clipboard. If true, there
+/// will be a pop-up(Toast) that tells the user that the text has been copied
+/// to the clipboard.
+///
+/// Default is true.
+@"clipboard-overlay": bool = true,
+
 /// Whether to allow programs running in the terminal to read/write to the
 /// system clipboard (OSC 52, for googling). The default is to allow clipboard
 /// reading after prompting the user and allow writing unconditionally.

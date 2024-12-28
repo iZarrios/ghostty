@@ -887,7 +887,9 @@ fn gtkActionCopy(
         return;
     };
 
-    self.sendToast("Copied to clipboard");
+    if(surface.config.clipboard_overlay) {
+        self.sendToast("Copied to clipboard");
+    }
 }
 
 fn gtkActionPaste(
